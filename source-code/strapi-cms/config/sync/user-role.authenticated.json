@@ -1,0 +1,58 @@
+{
+  "name": "Authenticated",
+  "description": "Default role given to authenticated user.",
+  "type": "authenticated",
+  "permissions": [
+    {
+      "action": "api::company.company.find"
+    },
+    {
+      "action": "api::company.company.findOne"
+    },
+    {
+      "action": "api::field.field.find"
+    },
+    {
+      "action": "api::field.field.findOne"
+    },
+    {
+      "action": "api::profession.profession.find"
+    },
+    {
+      "action": "api::profession.profession.findOne"
+    },
+    {
+      "action": "api::recruitment.recruitment.apply"
+    },
+    {
+      "action": "api::recruitment.recruitment.find"
+    },
+    {
+      "action": "api::recruitment.recruitment.findOne"
+    },
+    {
+      "action": "api::web.web.topProfessions"
+    },
+    {
+      "action": "plugin::upload.content-api.upload"
+    },
+    {
+      "action": "plugin::users-permissions.auth.changePassword"
+    },
+    {
+      "action": "plugin::users-permissions.user.find"
+    },
+    {
+      "action": "plugin::users-permissions.user.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.user.interested"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    },
+    {
+      "action": "plugin::users-permissions.user.updateMe"
+    }
+  ]
+}

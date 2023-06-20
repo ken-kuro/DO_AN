@@ -1,0 +1,301 @@
+{
+  "name": "Author",
+  "code": "strapi-author",
+  "description": "Authors can manage the content they have created.",
+  "permissions": [
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::company.company",
+      "properties": {
+        "fields": [
+          "name",
+          "address",
+          "lat",
+          "lng",
+          "description",
+          "avatar",
+          "banner",
+          "website",
+          "recruitments",
+          "fields"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::company.company",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::company.company",
+      "properties": {
+        "fields": [
+          "name",
+          "address",
+          "lat",
+          "lng",
+          "description",
+          "avatar",
+          "banner",
+          "website",
+          "recruitments",
+          "fields"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::company.company",
+      "properties": {
+        "fields": [
+          "name",
+          "address",
+          "lat",
+          "lng",
+          "description",
+          "avatar",
+          "banner",
+          "website",
+          "recruitments",
+          "fields"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::field.field",
+      "properties": {
+        "fields": [
+          "name",
+          "description"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::field.field",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::field.field",
+      "properties": {
+        "fields": [
+          "name",
+          "description"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::field.field",
+      "properties": {
+        "fields": [
+          "name",
+          "description"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::profession.profession",
+      "properties": {
+        "fields": [
+          "name",
+          "description"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::profession.profession",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::profession.profession",
+      "properties": {
+        "fields": [
+          "name",
+          "description"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::profession.profession",
+      "properties": {
+        "fields": [
+          "name",
+          "description"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::recruitment.recruitment",
+      "properties": {
+        "fields": [
+          "title",
+          "jobDeadline",
+          "numberOfRecruitment",
+          "jobType",
+          "employeeLevel",
+          "gender",
+          "candidates",
+          "profession",
+          "description",
+          "requirements",
+          "benefits",
+          "workLocation",
+          "company",
+          "province",
+          "salary",
+          "experience"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::recruitment.recruitment",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::recruitment.recruitment",
+      "properties": {
+        "fields": [
+          "title",
+          "jobDeadline",
+          "numberOfRecruitment",
+          "jobType",
+          "employeeLevel",
+          "gender",
+          "candidates",
+          "profession",
+          "description",
+          "requirements",
+          "benefits",
+          "workLocation",
+          "company",
+          "province",
+          "salary",
+          "experience"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::recruitment.recruitment",
+      "properties": {
+        "fields": [
+          "title",
+          "jobDeadline",
+          "numberOfRecruitment",
+          "jobType",
+          "employeeLevel",
+          "gender",
+          "candidates",
+          "profession",
+          "description",
+          "requirements",
+          "benefits",
+          "workLocation",
+          "company",
+          "province",
+          "salary",
+          "experience"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::upload.assets.copy-link",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.download",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.update",
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::upload.configure-view",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.read",
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "singularName": "company",
+    "pluralName": "companies",
+    "displayName": "Company",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "address": {
+      "type": "text"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "website": {
+      "type": "string"
+    },
+    "recruitments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recruitment.recruitment",
+      "mappedBy": "company"
+    },
+    "fields": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::field.field"
+    },
+    "companySize": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

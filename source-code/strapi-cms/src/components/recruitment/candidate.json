@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_recruitment_candidates",
+  "info": {
+    "displayName": "Candidate"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "resume": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::company.company",
+  "value": {
+    "uid": "api::company.company",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "address": {
+        "edit": {
+          "label": "address",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "address",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "lat": {
+        "edit": {
+          "label": "lat",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "lat",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "lng": {
+        "edit": {
+          "label": "lng",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "lng",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "avatar": {
+        "edit": {
+          "label": "avatar",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "avatar",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "banner": {
+        "edit": {
+          "label": "banner",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "banner",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "website": {
+        "edit": {
+          "label": "website",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "website",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "recruitments": {
+        "edit": {
+          "label": "recruitments",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "recruitments",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "fields": {
+        "edit": {
+          "label": "fields",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "fields",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "companySize": {
+        "edit": {
+          "label": "companySize",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "companySize",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "name",
+            "size": 6
+          },
+          {
+            "name": "address",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "lat",
+            "size": 4
+          },
+          {
+            "name": "lng",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "avatar",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "banner",
+            "size": 6
+          },
+          {
+            "name": "website",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "recruitments",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "fields",
+            "size": 6
+          },
+          {
+            "name": "companySize",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 12
+          }
+        ]
+      ],
+      "list": [
+        "id",
+        "name",
+        "address"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

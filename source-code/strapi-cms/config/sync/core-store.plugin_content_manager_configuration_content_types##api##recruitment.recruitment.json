@@ -1,0 +1,379 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::recruitment.recruitment",
+  "value": {
+    "uid": "api::recruitment.recruitment",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "title",
+      "defaultSortBy": "title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "jobDeadline": {
+        "edit": {
+          "label": "jobDeadline",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "jobDeadline",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "numberOfRecruitment": {
+        "edit": {
+          "label": "numberOfRecruitment",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "numberOfRecruitment",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "jobType": {
+        "edit": {
+          "label": "jobType",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "jobType",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "employeeLevel": {
+        "edit": {
+          "label": "employeeLevel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "employeeLevel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "gender": {
+        "edit": {
+          "label": "gender",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "gender",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "profession": {
+        "edit": {
+          "label": "profession",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "profession",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "requirements": {
+        "edit": {
+          "label": "requirements",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "requirements",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "benefits": {
+        "edit": {
+          "label": "benefits",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "benefits",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "workLocation": {
+        "edit": {
+          "label": "workLocation",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "workLocation",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "company": {
+        "edit": {
+          "label": "company",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "company",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "province": {
+        "edit": {
+          "label": "province",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "province",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "salary": {
+        "edit": {
+          "label": "salary",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "salary",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "experience": {
+        "edit": {
+          "label": "experience",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "experience",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "candidates": {
+        "edit": {
+          "label": "candidates",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "candidates",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "title",
+        "jobDeadline"
+      ],
+      "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "jobDeadline",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "numberOfRecruitment",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "jobType",
+            "size": 6
+          },
+          {
+            "name": "employeeLevel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "gender",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "profession",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "requirements",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "benefits",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "workLocation",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "company",
+            "size": 6
+          },
+          {
+            "name": "province",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "salary",
+            "size": 6
+          },
+          {
+            "name": "experience",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "candidates",
+            "size": 12
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

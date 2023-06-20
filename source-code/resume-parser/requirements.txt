@@ -1,0 +1,17 @@
+#App
+Flask~=2.3.1
+Werkzeug~=2.3.0
+#Extract
+#Don't update to latest due to weird symbol % and !
+PyMuPDF~=1.21.1 #provides "fitz"
+Pillow~=9.5.0
+setuptools~=67.7.2
+python-docx~=0.8.11
+#Spacy
+spacy>=2.3.0, <2.4.0
+en-core-web-sm@ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
+nltk==3.5
+pandas~=2.0.1
+phonenumbers~=8.13.11
+#GPT
+revChatGPT~=5.0.0

@@ -1,0 +1,26 @@
+# Android App
+/app
+
+# Build Artifacts
+/server/dist
+/client/.next
+
+# IDEs
+.vscode
+
+# Project Metadata
+.crowdin.yml
+
+# Documentation
+README.md
+SECURITY.md
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+
+# Project Dependencies
+**/node_modules
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml

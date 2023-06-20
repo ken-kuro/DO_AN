@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:alpine
+    restart: always
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      start_period: 15s
+      interval: 30s
+      timeout: 30s
+      retries: 3
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  server:
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
+    restart: always
+    ports:
+      - "3100:3100"
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+
+  client:
+    build:
+      context: .
+      dockerfile: ./client/Dockerfile
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+    env_file:
+      - .env
+
+volumes:
+  pgdata:

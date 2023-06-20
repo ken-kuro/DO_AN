@@ -1,0 +1,151 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recruitments",
+  "info": {
+    "singularName": "recruitment",
+    "pluralName": "recruitments",
+    "displayName": "Recruitment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "jobDeadline": {
+      "type": "date",
+      "required": true
+    },
+    "numberOfRecruitment": {
+      "type": "integer"
+    },
+    "jobType": {
+      "type": "enumeration",
+      "enum": [
+        "Toàn thời gian",
+        "Bán thời gian",
+        "Remote"
+      ],
+      "required": true,
+      "default": "Toàn thời gian"
+    },
+    "employeeLevel": {
+      "type": "enumeration",
+      "enum": [
+        "Thực tập sinh",
+        "Nhân viên",
+        "Trưởng nhóm",
+        "Trưởng/Phó phòng",
+        "Quản lý/Giám sát",
+        "Trưởng chi nhánh",
+        "Phó giám đốc",
+        "Giám đốc"
+      ],
+      "default": "Nhân viên",
+      "required": true
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Nam",
+        "Nữ",
+        "Không yêu cầu"
+      ],
+      "default": "Không yêu cầu",
+      "required": true
+    },
+    "profession": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profession.profession"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "requirements": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "benefits": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "workLocation": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    },
+    "company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "recruitments"
+    },
+    "province": {
+      "type": "enumeration",
+      "enum": [
+        "Hà Nội",
+        "Hồ Chí Minh"
+      ],
+      "required": true
+    },
+    "salary": {
+      "type": "enumeration",
+      "enum": [
+        "Dưới 3 triệu",
+        "Từ 3 - 5 triệu",
+        "Từ 5 - 7 triệu",
+        "Từ 7 - 10 triệu",
+        "Từ 10 - 12 triệu",
+        "Từ 12 - 15 triệu",
+        "Từ 15 - 20 triệu",
+        "Từ 20 - 25 triệu",
+        "Từ 25 - 30 triệu",
+        "Trên 30 triệu",
+        "Thoả thuận"
+      ],
+      "default": "Thoả thuận",
+      "required": true
+    },
+    "experience": {
+      "type": "enumeration",
+      "enum": [
+        "Chưa có kinh nghiệm",
+        "Dưới 1 năm",
+        "Một năm",
+        "Hai năm",
+        "Ba năm",
+        "Bốn năm",
+        "Năm năm",
+        "Trên 5 năm"
+      ],
+      "default": "Chưa có kinh nghiệm",
+      "required": true
+    },
+    "candidates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recruitment.candidate"
+    }
+  }
+}
